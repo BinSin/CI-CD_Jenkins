@@ -83,7 +83,7 @@
     3. 브라우저를 통해 해당 포트 접속
         - 위 명령어를 통해 얻은 Administrator password 입력 후 설치
         
-        ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled.png)
+        ![Untitled](images/Untitled.png)
         
     4. 플러그인 설치 후 초기 계정 생성
         
@@ -96,12 +96,12 @@
 1. GitHub 설정
     - API URL은 깃헙 api url 입력해야함
     
-    ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%201.png)
+    ![Untitled](images/Untitled%201.png)
     
     - Credentials 추가
         - Credentials > Add > Kind > Secret text > Secret 에 **Github token** 넣기
             
-            ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%202.png)
+            ![Untitled](images/Untitled%202.png)
             
         - Github token
             - Settings > Developer settings > Personal access tokens > Generate new token 클릭
@@ -109,7 +109,7 @@
                 - 생성 시 나타나는 token 입력!!
         - Test conection 으로 접속 되는지 확인
             
-            ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%203.png)
+            ![Untitled](images/Untitled%203.png)
             
 2. SSH remote hosts 설정
     - Hostname: aws ip주소
@@ -131,7 +131,7 @@
 
 1. JDK 설정
     
-    ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%204.png)
+    ![Untitled](images/Untitled%204.png)
     
     - 도커 이미지 내의 Java Path 확인
         
@@ -142,7 +142,7 @@
         
 2. Git 설정
     
-    ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%205.png)
+    ![Untitled](images/Untitled%205.png)
     
     - 도커 이미지 내의 Git Path 확인
         
@@ -153,7 +153,7 @@
         
 3. Maven 설정
     
-    ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%206.png)
+    ![Untitled](images/Untitled%206.png)
     
     - Install automatically  클릭하여 자동 maven 설치
 
@@ -174,7 +174,7 @@
 
 - item name 입력, Freestyle project 클릭
 
-![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%207.png)
+![Untitled](images/Untitled%207.png)
 
 ### General 설정
 
@@ -182,18 +182,18 @@
     - Project url 에 github project url 입력
 2. Git Parameter 설정
     
-    ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%208.png)
+    ![Untitled](images/Untitled%208.png)
     
     - git branch를 매개변수로 사용할 수 있다.
     
-    ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%209.png)
+    ![Untitled](images/Untitled%209.png)
     
 
 ### 소스 코드 관리
 
 - Git repository 세팅
 
-![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%2010.png)
+![Untitled](images/Untitled%2010.png)
 
 ### 빌드 유발
 
@@ -251,7 +251,7 @@
         - Goals에 clean install
             - -DskipTests=true → mvn install 시 테스트 생략
             
-            ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%2011.png)
+            ![Untitled](images/Untitled%2011.png)
             
         - 만약 자동 mvn 설치 사용 시 git project 루트 경로 이외에 프로젝트가 위치해 있으면 빌드 안됨 (ex: jenkins_test/jenkins 내부가 프로젝트면 빌드 X)
 
@@ -270,7 +270,7 @@
         - Remove prefix: 제거할 prefix (Source file 경로에서 하위 경로 입력)
         - Exec command: 마지막으로 실행할 명령어
         
-        ![Untitled](Jenkins%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20CI%20CD%20f146ad1d368243c08573e7844a4cf119/Untitled%2012.png)
+        ![Untitled](images/Untitled%2012.png)
         
 
 ## 이슈
