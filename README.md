@@ -1,4 +1,4 @@
-# Jenkins를 활용한 CI/CD
+# AWS EC2와 Jenkins를 활용한 CI/CD
 
 ## CI/CD 개념
 
